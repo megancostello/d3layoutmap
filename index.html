@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/topojson@3"></script>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Airport Connections</h1> 
+        <div class="container radioButtons">
+            <div class = "row"> 
+                
+                <label class="mapForm" for="force">
+                    <input class="mapForm" type="radio" id="force" name="type" value="force">
+                    Force
+                </label>
+                <br><br>
+                <label class="mapForm" for="map">
+                    <input class="mapForm" type="radio" id="map" name="type" value="map">
+                    Map
+                </label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="nodeMap"></div>
+
+</body>
+</html>
